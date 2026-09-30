@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio - Phạm Trang</title>
+
+    <link rel="stylesheet" href="th1.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#about" class="logo">Its_tranz</a>
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            
+            <button id="themeToggle" class="theme-btn">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+
+            <div class="about-content">
+                <p class="hello">Xin chào, mình là</p>
+                <h1>Phạm Thùy Trang</h1>
+                <h2>Sinh viên Công nghệ thông tin</h2>
+                <p class="about-text">
+                    Mình là sinh viên ngành Công nghệ thông tin,
+                    trường Học viện Công nghệ bưu chính viễn thông.
+                </p>
+                <a href="#projects" class="btn">
+                    Xem dự án
+                </a>
+            </div>
+            <div class="about-image">
+               <div class="avatar">
+                    <img src="images/CSH.jpg" alt="Ảnh đại diện của Phạm Thùy Trang">
+                </div>
+            </div>
+    
+        </section>
+
+        <section id="skills" class="section">
+
+            <div class="section-title">
+                <p>MY SKILLS</p>
+                <h2>Kỹ năng</h2>
+            </div>
+
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <p>
+                        Xây dựng cấu trúc và nội dung
+                        cho website.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <p>
+                        Thiết kế giao diện, Flexbox,
+                        Grid và Responsive.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>
+                        Tạo các chức năng tương tác
+                        cho website.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>MySQL</h3>
+                    <p>
+                        Thiết kế và quản lý
+                        cơ sở dữ liệu.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>
+                        Quản lý và lưu trữ
+                        các dự án lập trình.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="projects" class="section projects-section">
+
+            <div class="section-title">
+                <p>MY PROJECTS</p>
+                <h2>Dự án của mình</h2>
+            </div>
+
+            <div class="project-search">
+
+                <input
+                    type="text"
+                    id="projectSearch"
+                    placeholder="Tìm kiếm dự án..."
+                >
+
+                <select id="projectFilter">
+
+                    <option value="all">
+                        Tất cả
+                    </option>
+
+                    <option value="html">
+                        HTML/CSS
+                    </option>
+
+                    <option value="javascript">
+                        JavaScript
+                    </option>
+
+                    <option value="database">
+                        Database
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="projects-container" id="projectsContainer">
+
+                <article
+                    class="project-card"
+                    data-category="html"
+                    data-title="Website cá nhân"
+                >
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <h3>Website cá nhân</h3>
+
+                    <p>
+                        Xây dựng website giới thiệu bản thân
+                        bằng HTML và CSS với giao diện
+                        responsive.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                </article>
+
+                <article
+                    class="project-card"
+                    data-category="javascript"
+                    data-title="Website đặt lịch nail"
+                >
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <h3>Website đặt lịch Nail</h3>
+
+                    <p>
+                        Website đặt lịch làm nail với
+                        JavaScript, cho phép lựa chọn
+                        cửa hàng và dịch vụ.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </article>
+
+                <article
+                    class="project-card"
+                    data-category="database"
+                    data-title="Quản lý cửa hàng thời trang"
+                >
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <h3>Quản lý cửa hàng thời trang</h3>
+
+                    <p>
+                        Thiết kế cơ sở dữ liệu quản lý
+                        sản phẩm, khách hàng, đơn hàng
+                        cho cửa hàng thời trang.
+                    </p>
+
+                    <div class="tags">
+                        <span>MySQL</span>
+                        <span>Database</span>
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="project-card"
+                    data-category="javascript"
+                    data-title="Ứng dụng To-do List"
+                >
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <h3>To-do List</h3>
+
+                    <p>
+                        Ứng dụng quản lý công việc sử dụng
+                        JavaScript, cho phép thêm, xóa
+                        và đánh dấu công việc hoàn thành.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="noResult" class="no-result">
+           
+            </p>
+
+        </section>
+
+        <section id="contact" class="section contact-section">
+
+            <div class="section-title">
+                <p>CONTACT</p>
+                <h2>Liên hệ với mình</h2>
+            </div>
+
+
+            <form id="contactForm" class="contact-form" novalidate>
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Họ và tên
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Nhập họ và tên"
+                    >
+
+                    <small id="nameError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+<label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="example@gmail.com"
+                    >
+
+                    <small id="emailError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Nội dung
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        maxlength="300"
+                        placeholder="Nhập nội dung..."
+                    ></textarea>
+
+                    <div class="character-count">
+                        <span id="charCount">0</span>/300 ký tự
+                    </div>
+
+                    <small id="messageError"></small>
+
+                </div>
+
+
+                <button type="submit" class="submit-btn">
+                    Gửi liên hệ
+                </button>
+
+                <p id="formSuccess"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © <span id="currentYear"></span>
+            Its_tranz. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="th1.js"></script>
+
+</body>
+</html>
